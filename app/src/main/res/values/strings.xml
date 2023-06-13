@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">A Beautiful Mind</string>
+    <string name="play_count_label">Number of Games played: %1$d</string>
+    <string name="statistics_user_score_label">My score</string>
+    <string name="statistics_computer_score_label">Opponent score</string>
+    <string name="button_generate_game">Generate Game!</string>
+    <string name="strategies_group_label">Select Opponent type:</string>
+    <string name="strategy_random_label">Random</string>
+    <string name="strategy_greedy_label">Greedy</string>
+    <string name="strategy_cautious_label">Cautious</string>
+    <string name="strategy_nash_label">Nash</string>
+    <string name="button_reset_game">Start over!</string>
+    <string name="msg_strategy_required">Select an opponent type first!</string>
+
+    <string name="game_activity_top_title">Now, it\'s your Game ...</string>
+    <string name="game_activity_opponent_strategy">Your opponent plays according to this strategy : %1$s</string>
+    <string name="game_activity_hint_1">Hint: All the returns are giving in the form x/y, where x specifies the reward for you, and y the reward for your opponent.</string>
+    <string name="game_activity_hint_2">Hint: Your action is specified by the row. Your opponent\'s action is given by the column.</string>
+    <string name="game_activity_choose_action">Choose Action %1$s</string>
+    <string name="game_activity_result_label">Result:</string>
+    <string name="game_activity_result">You choose: Action %1$s%nOpponent choose: Action %2$s%nYou obtain: %3$s points%nOpponent obtains: %4$s points</string>
+    <string name="button_dismiss">Dismiss</string>
+    <string name="game_activity_unique_nash">There is a unique Nash equilibrium in this game:%nMy Action %1$s%nOpponent Action: %2$s</string>
+    <string name="game_activity_multiple_nash">There are multiple Nash equilibria in this game.%nOpponent can\'t choose an action.%nGame cannot be finished.</string>
+    <string name="game_activity_no_nash">There is no Nash equilibrium in this game.%nOpponent can\'t choose an action.%nGame cannot be finished.</string>
+    <string name="game_activity_dismiss">The game could not be finished!</string>
+    <string name="game_activity_empty_action">_</string>
+</resources>

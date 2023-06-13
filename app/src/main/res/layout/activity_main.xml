@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:orientation="vertical"
+        android:id="@+id/main_linear_layout">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/play_count_label"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/play_count_view"
+            android:textColor="@color/placeholder_color"/>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/statistics_table"
+            android:layout_marginTop="16dp"
+            android:stretchColumns="*"
+            android:isScrollContainer="true">
+            <TableRow
+                android:layout_width="match_parent">
+                <TextView
+                    android:text="@string/statistics_user_score_label"
+                    android:gravity="center"
+                    android:id="@+id/statistics_user_score_view"
+                    android:background="@color/blue"
+                    android:padding="8dp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:text="@string/statistics_computer_score_label"
+                    android:gravity="center"
+                    android:id="@+id/statistics_computer_score_view"
+                    android:padding="8dp"
+                    android:textStyle="bold"
+                    android:background="@color/dark_blue" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent">
+                <TextView
+                    android:gravity="center"
+                    android:id="@+id/statistics_user_score_value"
+                    android:text="0"
+                    android:padding="8dp"
+                    android:textStyle="bold"
+                    android:background="@color/yellow"/>
+                <TextView
+                    android:gravity="center"
+                    android:id="@+id/statistics_computer_score_value"
+                    android:text="0"
+                    android:padding="8dp"
+                    android:textStyle="bold"
+                    android:background="@color/dark_yellow"/>
+            </TableRow>
+        </TableLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginTop="24dp"
+            android:isScrollContainer="true">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/button_generate_game"
+                android:id="@+id/button_generate_game" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="@string/strategies_group_label"
+                android:textColor="@color/placeholder_color"/>
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="left"
+                android:id="@+id/strategies_radio_group">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radio_random"
+                    android:text="@string/strategy_random_label" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radio_greedy"
+                    android:text="@string/strategy_greedy_label"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radio_cautious"
+                    android:text="@string/strategy_cautious_label"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radio_nash"
+                    android:text="@string/strategy_nash_label" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="bottom"
+            android:isScrollContainer="true">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_weight="2"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/button_reset_game"
+                android:id="@+id/button_reset_game"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
