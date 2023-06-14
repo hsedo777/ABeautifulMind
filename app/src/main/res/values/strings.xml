@@ -14,6 +14,7 @@
 
     <string name="game_activity_top_title">Now, it\'s your Game ...</string>
     <string name="game_activity_opponent_strategy">Your opponent plays according to this strategy : %1$s</string>
+    <string name="game_activity_table_cell">%1$,d/%2$,d</string>
     <string name="game_activity_hint_1">Hint: All the returns are giving in the form x/y, where x specifies the reward for you, and y the reward for your opponent.</string>
     <string name="game_activity_hint_2">Hint: Your action is specified by the row. Your opponent\'s action is given by the column.</string>
     <string name="game_activity_choose_action">Choose Action %1$s</string>
@@ -25,4 +26,5 @@
     <string name="game_activity_no_nash">There is no Nash equilibrium in this game.%nOpponent can\'t choose an action.%nGame cannot be finished.</string>
     <string name="game_activity_dismiss">The game could not be finished!</string>
     <string name="game_activity_empty_action">_</string>
+    <string name="integer_format">%,d</string>
 </resources>
